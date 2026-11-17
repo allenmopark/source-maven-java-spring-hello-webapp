@@ -4,7 +4,7 @@ pipeline {
     stage ('checkout') {
       steps {
         git branch: 'main'
-        git@github.com:allenmopark/source-maven-java-spring-hello-webapp.git
+        url: 'https://github.com/allenmopark/source-maven-java-spring-hello-webapp.git'
       }
     }
     stage ('build') {
