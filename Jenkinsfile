@@ -1,9 +1,9 @@
 pipeline {
-  agent {label:"jenkins-node"}
+  agent {label "jenkins-node"}
   stages {
     stage ('checkout') {
       steps {
-        git branch: 'main'
+        git branch: 'main',
         url: 'https://github.com/allenmopark/source-maven-java-spring-hello-webapp.git'
       }
     }
