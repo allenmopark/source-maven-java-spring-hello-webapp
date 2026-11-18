@@ -3,7 +3,7 @@
   tasks:
     - docker_container:
         name: mytomcat
-        image: mhwan2010/mytomcat:v${{lookup('env','BUILD_NUMBER')}}
+        image: mhwan2010/mytomcat:v{{lookup('env','BUILD_NUMBER')}}
         ports:
           - "80:8080"
         state: started
